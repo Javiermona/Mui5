@@ -1,0 +1,13 @@
+.bold {
+font-weight: bold ;
+
+}
+
+.ProductRating {
+	padding: 0.75rem;
+}
+.ProductRating .sapMRI{
+	vertical-align: initial;
+}
+
+ 
