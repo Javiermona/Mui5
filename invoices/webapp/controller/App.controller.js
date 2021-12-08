@@ -11,8 +11,8 @@ sap.ui.define([
         "use strict"
         return Controller.extend("logaligroup.invoices.controller.App", {
             //Logica que devolvemos
-                onInit: function(){
- 
+       onInit: function(){
+            this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
                         
                             }, //
         onOpenDialog: function(){

@@ -5,10 +5,14 @@
             displayBlock="true">
 
     <Panel headerText="{i18n>panelHeader}" 
-           class="sapUiResponsiveMargin">
+           class="sapUiResponsiveMargin"
+           width="auto"
+           expandable="{device>/system/phone}"
+           expanded="{=!${device>/system/phone}}"  >
+           
         <content>
              <Button id="helloDialogButton" text="{i18n>helloDialogBut}" icon="sap-icon://action"
-            press=".onOpenDialog" class="sapUiSmallMarginEnd"/>
+            press=".onOpenDialog" class="sapUiSmallMarginEnd sapUiVisibleOnlyDesktop"/>
             <Button text="{i18n>showHelloButton}" 
             press=".onShowHello" class="sapUiSmallMarginEnd"/>
             <Input value="{/recipient/name}" 
